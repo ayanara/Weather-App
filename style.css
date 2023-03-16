@@ -18,12 +18,12 @@ body {
   background: #fff;
   position: relative;
   width: 400px;
-  height: 605px;
+  height: 105px;
   padding: 28px 32px;
   overflow: hidden;
   border-radius: 15px;
   font-family: 'roboto', sans-serif;
-  transition: 0,8s ease-out;
+  transition: 0,6s ease-out;
 }
 
 .search-box {
@@ -86,4 +86,100 @@ body {
   color: rgb(59, 58, 58);
   font-size: 4rem;
   font-weight: 800;
+}
+
+.weather-box .temperature  span{
+  position: absolute;
+  margin-left: 4px;
+  font-size: 2rem;
+}
+
+.weather-box .description {
+  color: rgb(59, 58, 58);
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-details .humidity, .weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+/* .weather-details .humidity {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details .wind {
+  padding-left: 20px;
+  justify-content: flex-start;
+
+} */
+
+.weather-details i {
+  color: rgb(59, 58, 58);
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.weather-details span {
+  color: rgb(59, 58, 58);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p{
+  color: rgb(59, 58, 58);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+  display: none;
+
+}
+
+.not-found img {
+  width: 70%;
+}
+
+.not-found p {
+  color: rgb(59, 58, 58);
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.weather-details, .weather-box {
+  scale: 0;
+  opacity: 0;
+}
+
+/* Animações */
+
+.fade-in {
+  animation: 0.5s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
